@@ -9,8 +9,9 @@ export const Tile = ({title, tags, src}) => {
 			<div className="details">
 				<div className='title'>{title}</div>
 				{tags.map((tag, id) => {
+					let colorCode = `tag ${(tag === 'React') ? 'yellow' : (tag === 'Typescript') ? 'green' : 'blue'}`;
 					return <div key={id} 
-											className='tag'>{tag}</div>	
+											className={colorCode}>{tag}</div>	
 				})}
 			</div>
 		</div>
