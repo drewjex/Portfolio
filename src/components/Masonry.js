@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export const Tile = ({title, src}) => {
+export const Tile = ({title, tags, src}) => {
   return (
     <div className="tile">
 			<div className="picture">
@@ -8,8 +8,10 @@ export const Tile = ({title, src}) => {
 			</div>
 			<div className="details">
 				<div className='title'>{title}</div>
-				<div className='tag'>React</div>
-				<div className='tag'>Typescript</div>
+				{tags.map((tag, id) => {
+					return <div key={id} 
+											className='tag'>{tag}</div>	
+				})}
 			</div>
 		</div>
   );

@@ -13,6 +13,7 @@ export class App extends React.Component {
 							return (
 								<Tile key={id}
 											title={project.title}
+											tags={project.tags}
                       src={project.image} />
 							) 
 						})}

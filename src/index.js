@@ -61,5 +61,12 @@ projects[6].title = "WPF Components";
 projects[7].title = "Resume";
 projects[8].title = "About Me";
 
+for (let i=0; i<imgId.length; i++) {
+	projects[i].tags = [];
+	projects[i].tags.push("React");
+	(i % 2 == 0) ? projects[i].tags.push("Typescript") : projects[i].tags.push(".NET");
+	(i % 3 == 0) && projects[i].tags.push("C#");
+}
+
 ReactDOM.render(<App projects = {projects} 
                      breakPoints={breakPoints}/>, document.querySelector("#app"));
