@@ -10,7 +10,8 @@ module.exports = {
   module: {
     rules: [
       {test: /\.(js)$/, use: 'babel-loader'},
-      {test: /\.css$/, use: ['style-loader', 'css-loader']}
+      {test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader']},
+      {test: /\.(png|jpg|PNG|JPG)$/, loader: 'url-loader' }
     ]
   },
   plugins: [new HtmlWebpackPlugin({

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #0E0D0F, #01010C);
+  font-family: Ubuntu, sans-serif;
+}  
+
+.container {
+	p {
+		margin:0 auto;
+		text-align:center;
+		width:100%;
+		margin-top:20px;
+		font-family: 'Quicksand', sans-serif;
+		font-size:36px;
+		color:white;
+	}
+}
+
+.masonry-container{
+	width: 100%;
+	margin: auto;
+	margin-top: 20px;
+	border: 0px solid rgba(0,0,0,.1);
+}
+.masonry{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: stretch;
+	width: 100%;
+	margin: auto;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: stretch;
+	flex-grow: 1;
+}
+.tile-container {
+	margin-bottom:-5px;
+}
+.tile{
+	margin: 1px;
+	position: relative;
+	font-size:26px;
+	overflow:hidden;
+	z-index: 1;
+	transition: all .1s ease-in-out;
+	.picture {
+		img {
+			border-radius: 1px;
+      width: 100%;
+		}
+	}
+	.details {
+		position:absolute;
+		bottom:6px;
+		left:0;
+		right:0;
+		padding:20px;
+		color:white;
+		background: rgba(204, 204, 204, 0.2);
+		.title {
+			clear:both;
+		}
+		.tag {
+			border: 0px;
+			padding: 3px;
+			background: rgba(204, 204, 204, 0.2);
+			text-align:center;
+			color:white;
+			float:left;
+			font-size:12px;
+			margin:1px;
+
+			&.green {
+				background: rgba(38, 230, 30, 0.2);
+			}
+		}
+	}
+	&:hover {
+		transform: scale(1.05);
+		z-index: 1000;
+		cursor:pointer;
+	}
+}
