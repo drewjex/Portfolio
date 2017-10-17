@@ -14,7 +14,7 @@ let breakPoints = [500, 750, 1000];
 let projects = [
 	{
 		title: "BookTracker",
-		description: "I worked directly with several employees at BYU's University Accessibility Center to design an application that would fit their specific needs. The application provides a student portal where student can submit books for conversion and an admin portal where employees and administrators can receive requests, track book statuses, send emails, manage employees, and much more. The application is built with the Model-View-Controller architecture and implements a wide variety of javascript libraries.",
+		description: "I worked directly with several employees at BYU's University Accessibility Center to personally design, develop, and deploy a robust MVC PHP/Javascript administration application. The app provides a student portal where student can submit books for conversion and an admin portal where employees and administrators can receive requests, track book statuses, send emails, manage employees, and much more. A variety of JQuery and Javascript libraries were used on the front-end, which makes ajax requests are used to save data and update the MySQL database.",
 		image: require('./assets/booktracker.jpg'),
 		github: "https://github.com/drewjex/MusicMaker-v2",
 		project_url: "",
@@ -26,7 +26,7 @@ let projects = [
 	},
 	{
 		title: "MusicMaker",
-		description: "This is a long-term project that will enable users to listen to original music spontaneously. The project currently plays a fully-fledged piano song. This is simply a personal project that I've been doing for fun.",
+		description: "I received the ORCA research grant from Brigham Young University my senior year to work on this project with a professor. MusicMaker generates music spontaneously by analyzing musical patterns in other music. The complex song-analysis process is built in PHP and uses a Javascript MIDI library to play the song to the browser. A more detailed description of the project details can be found in the Github repo (musicmaker.pdf).",
 		image: require('./assets/music.jpg'),
 		github: "https://github.com/drewjex/BookTracker",
 		project_url: "",
@@ -36,7 +36,7 @@ let projects = [
 	},
 	{
 		title: "EventTickets",
-		description: "I have worked primarily on the admin side of this site, which is heavily dependent on PHP and the MySQL database. Thousands of students and faculty have used this site, so we have to be very careful with maintainance and code quality.",
+		description: "I have worked primarily on the admin side of this site building features that allows users to create events and manage ticketing sales. Thousands of students and faculty have used this site, so we have to be very careful with maintainance and code quality.",
 		image: require('./assets/eventtickets.jpg'),
 		github: "https://github.com/drewjex/event-editor",
 		project_url: "https://eventtickets.byu.edu/",
