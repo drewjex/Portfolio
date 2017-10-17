@@ -3,17 +3,19 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #0E0D0F, #01010C);
+	padding: 0;
+	background: linear-gradient(to right, #4D4D4D, #252525);
+  //background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%); //linear-gradient(to right, #4D4D4D, #252525);
   font-family: Ubuntu, sans-serif;
 }  
 
 .container {
+	overflow:hidden;
 	p {
 		margin:0 auto;
 		text-align:center;
 		width:100%;
-		margin-top:20px;
+		margin-top:50px;
 		font-family: 'Quicksand', sans-serif;
 		font-size:36px;
 		color:white;
@@ -23,10 +25,11 @@ body {
 .masonry-container{
 	width: 100%;
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 50px;
 	border: 0px solid rgba(0,0,0,.1);
 }
 .masonry{
+	transition: all .3s ease-in-out;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -39,13 +42,13 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-content: stretch;
-	flex-grow: 1;
+	flex: 1 0;
 }
 .tile-container {
 	margin-bottom:-5px;
 }
 .tile{
-	margin: 1px;
+	margin: 6px;
 	position: relative;
 	font-size:26px;
 	overflow:hidden;
@@ -54,20 +57,46 @@ body {
 	.picture {
 		img {
 			border-radius: 1px;
-      width: 100%;
+      width: 150%;
 		}
 	}
 	.details {
+		transition: all .1s ease-in-out;
 		position:absolute;
-		bottom:6px;
-		left:0;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: bold;
+		font-size:20px;
 		right:0;
+		left:0;
+		bottom:10%;
 		padding:20px;
+		display:flex;
+		justify-content: center;
+		align-items: center;
 		color:white;
-		background: rgba(204, 204, 204, 0.2);
+		opacity:.9;
+		background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+		//background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(204, 204, 204, 0.6));
+		//background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+
+		// &:hover {
+		// 	font-size:24px;
+		// 	opacity:1;
+		// }
+
+		p {
+			margin:0 auto !important;
+			font-weight: bold;
+			font-size:20px;
+			text-align:left !important;
+			font-family: 'Quicksand', sans-serif;
+			color:white;
+		}
+
 		.title {
 			clear:both;
 		}
+
 		.tag {
 			border: 0px;
 			padding: 3px;
@@ -92,8 +121,116 @@ body {
 		}
 	}
 	&:hover {
+		font-size:24px;
+		opacity:1;
 		transform: scale(1.05);
+		-webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
 		z-index: 1000;
 		cursor:pointer;
 	}
+}
+
+.blur {
+	-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.modal {
+	transition: all .3s ease-in;
+	animation: fadeIn .3s ease-in;
+	color:white;
+	padding:10px;
+	z-index:5000;
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+	width:80%;
+	height:600px;
+	background:linear-gradient(to right, #111111, #252525);
+	border-radius:5px;
+	-webkit-box-shadow: 0px 0px 52px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 52px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 52px 0px rgba(0,0,0,0.75);
+}
+
+@keyframes fadeIn {
+	from {
+		//transform: scale(.85) translateX(-50%) translateY(-50%);
+		opacity:0;
+	}
+	to {
+		//transform: scale(1) translateX(-50%) translateY(-50%);
+		opacity:1;
+	}
+}
+
+.modal-background {
+	transition: all .3s ease-in-out;
+	animation: fadeIn .3s ease-in-out;
+	position: fixed;
+	z-index:3000;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+[class*='close-'] {
+  color: white;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 black;
+	top: 5px;
+	z-index:4000;
+}
+
+[class*='close-']:hover {
+	color:#777;
+	text-shadow: 0 1px 0 black;
+}
+
+.close-thick:after {
+  content: '✖'; /* UTF-8 symbol */
+}
+
+.image-container {
+	position:absolute;
+	top:10px;
+	left:10px;
+	bottom:200px;
+	right:10px;
+	overflow:hidden;
+}
+
+.text-container {
+	position: absolute;
+	bottom:10px;
+	top:410px;
+	left:10px;
+	right:10px;
+	color:white;
+	h2 {
+		margin:0 auto;
+	}
+	p {
+		margin:0 auto;
+		text-align:left;
+		width:100%;
+		font-family: 'Quicksand', sans-serif;
+		font-size:16px;
+		color:white;
+	}
+}
+
+span {
+	display:block;
 }
