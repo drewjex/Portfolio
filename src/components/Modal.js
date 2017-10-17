@@ -25,14 +25,17 @@ export class Modal extends React.Component {
           <a href="#" 
              className="close-thick"
              onClick={this.CloseModal}/>
-          <div className="image-container">
-            <img src={this.props.tile.image} />
-          </div>
           <div className="text-container">
             <h2>{this.props.tile.title}</h2>
             <p>
               {this.props.tile.description}
             </p>
+            <a className='btn-link'>
+              Go to Project
+            </a>
+            <a className='btn-link'>
+              Git Repo
+            </a>
           </div>
         </div>
       </div>

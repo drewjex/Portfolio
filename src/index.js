@@ -14,8 +14,10 @@ let breakPoints = [500, 750, 1000];
 let projects = [
 	{
 		title: "BookTracker",
-		description: "For this project, I worked directly with several employees at the University Accessibility Center to design an application that would fit their specific needs. The application provides a student portal where student can submit books for conversion and an admin portal where employees and administrators can receive requests, track book statuses, send emails, manage employees, and much more. The application is built with the Model-View-Controller architecture and implements a wide variety of javascript libraries.",
+		description: "I worked directly with several employees at BYU's University Accessibility Center to design an application that would fit their specific needs. The application provides a student portal where student can submit books for conversion and an admin portal where employees and administrators can receive requests, track book statuses, send emails, manage employees, and much more. The application is built with the Model-View-Controller architecture and implements a wide variety of javascript libraries.",
 		image: require('./assets/booktracker.jpg'),
+		github: "https://github.com/drewjex/MusicMaker-v2",
+		project_url: "",
 		tags: [
 			"PHP",
 			"Javascript",
@@ -26,6 +28,8 @@ let projects = [
 		title: "MusicMaker",
 		description: "This is a long-term project that will enable users to listen to original music spontaneously. The project currently plays a fully-fledged piano song. This is simply a personal project that I've been doing for fun.",
 		image: require('./assets/music.jpg'),
+		github: "https://github.com/drewjex/BookTracker",
+		project_url: "",
 		tags: [
 			"PHP"
 		]
@@ -34,6 +38,8 @@ let projects = [
 		title: "EventTickets",
 		description: "I have worked primarily on the admin side of this site, which is heavily dependent on PHP and the MySQL database. Thousands of students and faculty have used this site, so we have to be very careful with maintainance and code quality.",
 		image: require('./assets/eventtickets.jpg'),
+		github: "https://github.com/drewjex/event-editor",
+		project_url: "https://eventtickets.byu.edu/",
 		tags: [
 			"PHP",
 			"Javascript",
@@ -44,6 +50,8 @@ let projects = [
 		title: "Outdoors Unlimited",
 		description: "I have written several versions of this site for Outdoors Unlimited at BYU. They are currently in the process of deciding their needs for the site. As a result, I have posted two implementations of the same site. This site allows users to reserve rental equipment in advance, create accounts, pay online, and view orders. The site uses a SOAP Interface to interact with the third-party reservation system. The site also uses PHP and a MySQL database to handle backend operations.",
 		image: require('./assets/outdoors.jpg'),
+		github: "",
+		project_url: "https://outdoors.byu.edu/",
 		tags: [
 			"PHP",
 			"Javascript",
@@ -54,6 +62,8 @@ let projects = [
 		title: "Reading Tracker",
 		description: "I wrote this project while serving as a volunteer in Bangkok, Thailand. It provides a place for people to keep track of reading scriptures. Users can create accounts, check-off chapters they've read, and then compare their reading to friends. Organizations in India and Mongolia also used this website, so I wrote it to be flexible with other languages.",
 		image: require('./assets/scriptureTracker.jpg'),
+		github: "",
+		project_url: "",
 		tags: [
 			"PHP",
 			"Javascript",
@@ -64,6 +74,8 @@ let projects = [
 		title: ".NET Components",
 		description: "This is a really cool thing I did.",
 		image: require('./assets/booktracker.jpg'),
+		github: "https://github.com/drewjex/ObservableState",
+		project_url: "",
 		tags: [
 			"PHP",
 			"Javascript",
@@ -74,6 +86,8 @@ let projects = [
 		title: "WPF Components",
 		description: "This is a really cool thing I did.",
 		image: require('./assets/booktracker.jpg'),
+		github: "https://github.com/drewjex/WPFColorSliderComponent",
+		project_url: "",
 		tags: [
 			"PHP",
 			"Javascript",
@@ -84,6 +98,8 @@ let projects = [
 		title: "LineView",
 		description: "This is a really cool thing I did.",
 		image: require('./assets/booktracker.jpg'),
+		github: "",
+		project_url: "",
 		tags: [
 			"PHP",
 			"Javascript",
@@ -94,6 +110,8 @@ let projects = [
 		title: "SkyTrack",
 		description: "This is a really cool thing I did.",
 		image: require('./assets/booktracker.jpg'),
+		github: "",
+		project_url: "",
 		tags: [
 			"PHP",
 			"Javascript",
@@ -104,6 +122,8 @@ let projects = [
 		title: "The Ryde",
 		description: "This is a really cool thing I did.",
 		image: require('./assets/ryde.jpg'),
+		github: "",
+		project_url: "http://www.studentmovement.com/",
 		tags: [
 			"PHP",
 			"Javascript",

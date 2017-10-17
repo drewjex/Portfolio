@@ -17,7 +17,7 @@ body {
 		width:100%;
 		margin-top:50px;
 		font-family: 'Quicksand', sans-serif;
-		font-size:36px;
+		font-size:44px;
 		color:white;
 	}
 }
@@ -101,6 +101,7 @@ body {
 			border: 0px;
 			padding: 3px;
 			background: rgba(204, 204, 204, 0.2);
+			//background: rgba(46, 150, 224, 0.3);
 			text-align:center;
 			color:white;
 			float:left;
@@ -108,15 +109,16 @@ body {
 			margin:1px;
 
 			&.green {
-				background: rgba(38, 230, 30, 0.2);
+				background: rgba(38, 230, 30, 0.5);
 			}
 
 			&.blue {
-				background: rgba(3, 93, 228, 0.2);
+				//background: rgba(3, 93, 228, 0.2);
+				background: rgba(46, 150, 224, 0.5);
 			}
 
 			&.yellow {
-				background: rgba(238, 234, 3, 0.2);
+				background: rgba(238, 234, 3, 0.5);
 			}
 		}
 	}
@@ -149,14 +151,13 @@ body {
 	position: fixed;
 	top:50%;
 	left:50%;
-	transform: translateX(-50%) translateY(-50%);
 	width:80%;
-	height:600px;
-	background:linear-gradient(to right, #111111, #252525);
+	height:50%;
+	transform: translateX(-50%) translateY(-50%);
+	//width:80%;
+	background:rgba(0, 0, 0, 0.0);
+	//background:linear-gradient(to right, #111111, #252525);
 	border-radius:5px;
-	-webkit-box-shadow: 0px 0px 52px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 52px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 52px 0px rgba(0,0,0,0.75);
 }
 
 @keyframes fadeIn {
@@ -214,12 +215,12 @@ body {
 .text-container {
 	position: absolute;
 	bottom:10px;
-	top:410px;
+	top:10px;
 	left:10px;
 	right:10px;
 	color:white;
 	h2 {
-		margin:0 auto;
+		margin-bottom:20px;
 	}
 	p {
 		margin:0 auto;
@@ -233,4 +234,55 @@ body {
 
 span {
 	display:block;
+}
+
+.btn {
+	text-transform: uppercase; 
+	box-sizing: border-box;
+	display:flex;
+	flex: 1 0;
+	font-size:14px;
+	border: 0px;
+	padding: 6px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	background:black;
+	color:#aaa;
+}
+
+.buttons {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: stretch;
+	top:0;
+	right:0;
+	left:0;
+	height:30px;
+	-webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+}
+
+.btn:hover {
+	cursor: pointer;
+	border-bottom: 2px solid rgb(46, 150, 224);
+}
+
+.btn-link {
+	margin-top:20px;
+	margin-right:5px;
+	border: none;
+	padding: 12px 18px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	color:white;
+	background: rgb(46, 150, 224);
+	cursor: pointer;
+}
+
+.btn-link:hover {
+	color:#ccc;
 }
