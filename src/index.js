@@ -36,7 +36,7 @@ let projects = [
 	},
 	{
 		title: "EventTickets",
-		description: "I have worked primarily on the admin side of this site building features that allows users to create events and manage ticketing sales. Thousands of students and faculty have used this site, so we have to be very careful with maintainance and code quality.",
+		description: "I have worked primarily on the admin side of this site building features that allows users to create events and manage ticketing sales. I worked primarily in PHP, Javascript, Jquery, and the Smarty framework. The site sells tickets for many big events around campus, including concerts, festivals, etc.",
 		image: require('./assets/eventtickets.jpg'),
 		github: "https://github.com/drewjex/event-editor",
 		project_url: "https://eventtickets.byu.edu/",
