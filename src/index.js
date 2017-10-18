@@ -131,6 +131,14 @@ let projects = [
 	},
 ];
 
+let aboutMe = {
+	title: "About Me!",
+	image: require('./assets/me2.JPG'),
+	description: `I love learning and I love creating. I am an avid tennis player and I enjoy being outside. I love music and playing the piano. My family is most important to me. I am always open to new experiences that enhance my abilities as a software developer. Say hi to me @ drewjex28@gmail.com!`,
+	github: "",
+	project_url: ""
+};
+
 // const imgId = [1011, 883, 1074, 823, 64, 65, 839, 314, 256, 316, 92,643];
 // for(let i = 0; i< imgId.length; i++){
 // 	const ih = 200 + Math.floor(Math.random()*10)*15;
@@ -159,4 +167,5 @@ let projects = [
 // }
 
 ReactDOM.render(<App projects = {projects} 
+										 aboutMe={aboutMe}
                      breakPoints={breakPoints}/>, document.querySelector("#app"));

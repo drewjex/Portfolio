@@ -234,6 +234,10 @@ body {
 	}
 }
 
+.small-text {
+	font-size: 16px !important;
+}
+
 span {
 	display:block;
 }
@@ -298,6 +302,13 @@ span {
 
 .hidden {
 	display:none;
+}
+
+.about-me {
+	width:50%;
+	margin-bottom:20px;
+	margin-right:20px;
+	float:left;
 }
 
 @media (max-width: 710px) {

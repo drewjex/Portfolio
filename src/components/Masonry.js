@@ -71,10 +71,12 @@ export class Masonry extends React.Component{
 		return (
 			<div>
 				{this.props.showModal &&
- 					<Modal ToggleModal={this.props.ToggleModal} 					 			 
+ 					<Modal ToggleModal={this.props.ToggleModal} 	
+					 			 isAboutMe={this.props.isAboutMe}	
+								 image={this.props.image}			 			 
 					 			 tile={this.props.selectedTile}/>
 				}
-				<div className={"masonry " + (this.props.showModal ? "blur" : "")} ref="Masonry">
+				<div className={"masonry " + (this.props.showModal || this.props.showAboutMe ? "blur" : "")} ref="Masonry">
 					{this.mapChildren().map((col, ci) => {
 						return (
 							<div className="column" key={ci} >

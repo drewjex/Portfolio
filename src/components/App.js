@@ -7,17 +7,28 @@ export class App extends React.Component {
 		super(props);
 		this.state = {
 			showModal: false,
+			showAboutMe: false,
 			selectedIndex: 0,
 			selectedTile: {}
 		}
 		this.ToggleModal = this.ToggleModal.bind(this);
+		this.ToggleAboutMe = this.ToggleAboutMe.bind(this);
 	}
 
 	ToggleModal(id, event) {
 	  this.setState({
 			showModal: !this.state.showModal,
+			showAboutMe: false,
 			selectedIndex: id,
 			selectedTile: this.props.projects[id]
+		})
+	}
+
+	ToggleAboutMe() {
+		this.setState({
+			showAboutMe: true,
+			showModal: !this.state.showModal,
+			selectedTile: this.props.aboutMe
 		})
 	}
 
@@ -31,10 +42,10 @@ export class App extends React.Component {
 					<a href='https://github.com/drewjex' target='_blank' className="btn">
 						GitHub
 					</a>
-					<p className='btn blue djfull'>
+					<p className='btn blue djfull' onClick={this.ToggleAboutMe}>
 						Drew Jex
 					</p>
-					<p className='btn blue djabv hidden'>
+					<p className='btn blue djabv hidden' onClick={this.ToggleAboutMe}>
 						DJ
 					</p>
 					<a href='https://linkedin.com/in/drewjex' target='_blank' className="btn lifull">
@@ -54,6 +65,9 @@ export class App extends React.Component {
 				<div className="masonry-container">
 					<Masonry breakPoints={this.props.breakPoints}
 									 ToggleModal={this.ToggleModal}
+									 ToggleAboutMe={this.ToggleAboutMe}
+									 isAboutMe={this.state.showAboutMe}
+									 aboutMe={this.props.aboutMe}
 									 showModal={this.state.showModal}
 									 selectedTile={this.state.selectedTile}>
 						{this.props.projects.map((project, id) => {

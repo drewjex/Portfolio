@@ -12,7 +12,7 @@ export class Modal extends React.Component {
     const masonry = document.querySelector(".masonry");
     const modal = document.querySelector(".modal");
     const modalBackground = document.querySelector(".modal-background");
-    modal.addEventListener("transitionend", this.props.ToggleModal.bind(this, this.props.title));
+    modal.addEventListener("transitionend", this.props.ToggleModal.bind(this, this.props.id));
     modal.style.opacity = `0`;
     modalBackground.style.opacity = `0`;
     masonry.classList.remove('blur');
@@ -27,7 +27,10 @@ export class Modal extends React.Component {
              onClick={this.CloseModal}/>
           <div className="text-container">
             <h2>{this.props.tile.title}</h2>
-            <p>
+            {this.props.isAboutMe &&
+              <img src={this.props.tile.image} className="about-me"/>
+            }
+            <p className="small-text">
               {this.props.tile.description}
             </p>
             {this.props.tile.project_url != "" &&
