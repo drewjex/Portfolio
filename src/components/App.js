@@ -49,7 +49,7 @@ export class App extends React.Component {
 						DJ
 					</p>
 					<a href='https://linkedin.com/in/drewjex' target='_blank' className="btn lifull">
-						Linked In
+						LinkedIn
 					</a>
 					<a href='https://linkedin.com/in/drewjex' target='_blank' className="btn liabv hidden">
 						LI

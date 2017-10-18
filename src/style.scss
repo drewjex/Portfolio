@@ -367,6 +367,20 @@ span {
 	.btn {
 		font-size:40px;
 	}
+
+	.btn-link {
+		width:40%;
+		font-size:30px;
+	}
+
+	.close-thick:after {
+		content: '✖'; /* UTF-8 symbol */
+		zoom:400%;
+	}
+
+	.text-container h2 {
+		font-size:60px;
+	}
 }
 
 @media only screen and (max-width: 930px) {

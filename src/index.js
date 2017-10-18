@@ -14,10 +14,10 @@ let breakPoints = [500, 750, 1000];
 let projects = [
 	{
 		title: "BookTracker",
-		description: "I worked directly with several employees at BYU's University Accessibility Center to personally design, develop, and deploy a robust MVC PHP/Javascript administration application. The app provides a student portal where student can submit books for conversion and an admin portal where employees and administrators can receive requests, track book statuses, send emails, manage employees, and much more. A variety of JQuery and Javascript libraries were used on the front-end, which makes ajax requests are used to save data and update the MySQL database.",
+		description: "I worked directly with several employees at BYU's University Accessibility Center to personally design, develop, and deploy a robust MVC PHP/Javascript administration application. The app provides a student portal where student can submit books for conversion and an admin portal where employees and administrators can receive requests, track book statuses, send emails, manage employees, and much more. A variety of JQuery and Javascript libraries were used on the front-end, which make ajax requests to save data and update the MySQL database. To comply with student protections under FERPA law, only an incomplete demo site is available for viewing.",
 		image: require('./assets/booktracker.jpg'),
 		github: "https://github.com/drewjex/BookTracker",
-		project_url: "",
+		project_url: "http://uacadmin.drewjex.com/production/",
 		tags: [
 			"PHP",
 			"Javascript",
@@ -27,17 +27,20 @@ let projects = [
 	},
 	{
 		title: "MusicMaker",
-		description: "I received the ORCA research grant from Brigham Young University my senior year to work on this project with a professor. MusicMaker generates music spontaneously by analyzing musical patterns in other music. The complex song-analysis process is built in PHP and uses a Javascript MIDI library to play the song to the browser. A more detailed description of the project details can be found in the Github repo (musicmaker.pdf).",
+		description: `My senior year at BYU, I received an ORCA research grant to develop this computational-creativity project under the mentorship of Professor Dan Ventura.		
+		MusicMaker generates music spontaneously by analyzing musical patterns in other music. 
+		The complex song-analysis process is built in PHP and uses a Javascript MIDI library to play the song to the browser. 
+		A more detailed description of the project details can be found in the Github repo (musicmaker.pdf).`,
 		image: require('./assets/music1.jpg'),
 		github: "https://github.com/drewjex/MusicMaker-v2",
-		project_url: "",
+		project_url: "http://musicmaker.drewjex.com/musicmaker/client/",
 		tags: [
 			"PHP"
 		]
 	},
 	{
 		title: "EventTickets",
-		description: "I have worked primarily on the admin side of this site building features that allows users to create events and manage ticketing sales. I worked primarily in PHP, Javascript, Jquery, and the Smarty framework. The site sells tickets for many big events around campus, including concerts, festivals, etc.",
+		description:`While employed at BYU, I worked on the admin side of this site, including creating features to allow users to broadcast their own events and manage ticket sales. Developed primarily in PHP, Javascript, Jquery, and the Smarty framework, this site is used to sell tickets for many big events and programs around campus, including concerts, festivals, etc.`,
 		image: require('./assets/eventtickets.jpg'),
 		github: "https://github.com/drewjex/event-editor",
 		project_url: "https://eventtickets.byu.edu/",
@@ -49,7 +52,7 @@ let projects = [
 	},
 	{
 		title: "Outdoors Unlimited",
-		description: "I built this application for the popular Outdoors Unlimited store in Provo, UT. This Wordpress site integrates with a third-party SOAP interface to allow for online reservations, and uses the popular Woocommerce plugin, with modifications, to handle rental items.",
+		description: `While employed at BYU, I built this application for the popular Outdoors Unlimited store in Provo, UT. This Wordpress site integrates with a third-party SOAP interface to allow for online reservations, and uses the Woocommerce plugin (with modifications) to handle rental items.`,
 		image: require('./assets/outdoors.jpg'),
 		github: "",
 		project_url: "https://outdoors.byu.edu/",
@@ -73,7 +76,7 @@ let projects = [
 	},
 	{
 		title: ".NET Components",
-		description: "I built several custom .NET components to work better with the MVVM framework common in WPF applications. The ObservableState allows for easy assignment of event-handlers to changes in state. The TrulyObservableCollection, also on github, allows for data-collections to raise notifications whenever any piece of data within the collection is changed.",
+		description: `While employed at SkyWest, I built several custom .NET components to work better with the MVVM framework common in WPF applications. The ObservableState allows for easy assignment of event-handlers to changes in state. The TrulyObservableCollection, also on github, allows for data-collections to raise notifications whenever any piece of data within the collection is changed.`,
 		image: require('./assets/net.jpg'),
 		github: "https://github.com/drewjex/ObservableState",
 		project_url: "",
@@ -84,7 +87,7 @@ let projects = [
 	},
 	{
 		title: "WPF Components",
-		description: "WPF Components include a custom multi-thumb color range-slider and a collapsible datagrid component.",
+		description: `While employed at SkyWest, I designed various original WPF components. Two of my favorites include a custom multi-thumb color range-slider and a collapsible datagrid component.`,
 		image: require('./assets/wpf.jpg'),
 		github: "https://github.com/drewjex/WPFColorSliderComponent",
 		project_url: "",
@@ -95,7 +98,7 @@ let projects = [
 	},
 	{
 		title: "LineView",
-		description: "Built with ASP.NET, Javascript, C#, and SQL Server. The web application allows airplane-mechanics the ability to manage electronic aircraft records. To protect company confidentiality, the full project is unfortunately, unavailable.",
+		description: `Built with ASP.NET, Javascript, C#, and SQL Server, this web application allows airplane-mechanics the ability to manage electronic aircraft records. To protect company confidentiality, the full project is unfortunately, unavailable. My role in this project has included consulting and development. Please feel free to ask me more.`,
 		image: require('./assets/line.jpg'),
 		github: "",
 		project_url: "",
@@ -107,7 +110,7 @@ let projects = [
 	},
 	{
 		title: "SkyTrack",
-		description: "I built several screens and front-end components for this robust Windows desktop application using .NET and WPF.",
+		description: `I built several screens and front-end components for this robust Windows desktop application using .NET and WPF. To protect company confidentiality, the full project is unfortunately, unavailable. My role in this project has included consulting and development. Please feel free to ask me more.`,
 		image: require('./assets/skytrack.jpg'),
 		github: "",
 		project_url: "",
@@ -119,7 +122,7 @@ let projects = [
 	},
 	{
 		title: "The Ryde",
-		description: "This site was developed in Drupal for The Ryde, the bus service that operates in south Provo. I participated in helping design and develop the front-end components to be responsive and mobile-friendly.",
+		description: `While employed with BYU, I developed this site in Drupal for The Ryde (a bus service that operates in South Provo). I participated in helping develop and design the front-end components to be responsive and mobile-friendly.`,
 		image: require('./assets/ryde.jpg'),
 		github: "",
 		project_url: "http://www.studentmovement.com/",
