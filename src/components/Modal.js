@@ -30,12 +30,16 @@ export class Modal extends React.Component {
             <p>
               {this.props.tile.description}
             </p>
-            <a className='btn-link'>
+            {this.props.tile.project_url != "" &&
+            <a href={this.props.tile.project_url} target='_blank' className='btn-link'>
               Go to Project
             </a>
-            <a className='btn-link'>
+            }
+            {this.props.tile.github != "" &&
+            <a href={this.props.tile.github} target='_blank' className='btn-link'>
               Git Repo
             </a>
+            }
           </div>
         </div>
       </div>

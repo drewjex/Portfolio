@@ -25,20 +25,32 @@ export class App extends React.Component {
 		return (
 			<div className="container">
 				<div className="buttons">
-					<a className="btn">
+					<a href='../src/assets/resume.pdf' target='_blank' className="btn">
 						Resume
 					</a>
 					<a href='https://github.com/drewjex' target='_blank' className="btn">
 						GitHub
 					</a>
-					<a href='https://linkedin.com/in/drewjex' target='_blank' className="btn">
+					<p className='btn blue djfull'>
+						Drew Jex
+					</p>
+					<p className='btn blue djabv hidden'>
+						DJ
+					</p>
+					<a href='https://linkedin.com/in/drewjex' target='_blank' className="btn lifull">
 						Linked In
 					</a>
-					<a href='https://stackoverflow.com/users/8060919/drew-jex' target='_blank' className="btn">
+					<a href='https://linkedin.com/in/drewjex' target='_blank' className="btn liabv hidden">
+						LI
+					</a>
+					<a href='https://stackoverflow.com/users/8060919/drew-jex' target='_blank' className="btn sofull">
 						Stack Overflow
 					</a>
+					<a href='https://stackoverflow.com/users/8060919/drew-jex' target='_blank' className="btn soabv hidden">
+						SO
+					</a>
 				</div>
-				<p>Drew Jex</p>
+				{/* <p>Drew Jex</p> */}
 				<div className="masonry-container">
 					<Masonry breakPoints={this.props.breakPoints}
 									 ToggleModal={this.ToggleModal}

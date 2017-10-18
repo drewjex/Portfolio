@@ -16,19 +16,20 @@ let projects = [
 		title: "BookTracker",
 		description: "I worked directly with several employees at BYU's University Accessibility Center to personally design, develop, and deploy a robust MVC PHP/Javascript administration application. The app provides a student portal where student can submit books for conversion and an admin portal where employees and administrators can receive requests, track book statuses, send emails, manage employees, and much more. A variety of JQuery and Javascript libraries were used on the front-end, which makes ajax requests are used to save data and update the MySQL database.",
 		image: require('./assets/booktracker.jpg'),
-		github: "https://github.com/drewjex/MusicMaker-v2",
+		github: "https://github.com/drewjex/BookTracker",
 		project_url: "",
 		tags: [
 			"PHP",
 			"Javascript",
-			"MySQL"
+			"MySQL",
+			"JQuery"
 		]
 	},
 	{
 		title: "MusicMaker",
 		description: "I received the ORCA research grant from Brigham Young University my senior year to work on this project with a professor. MusicMaker generates music spontaneously by analyzing musical patterns in other music. The complex song-analysis process is built in PHP and uses a Javascript MIDI library to play the song to the browser. A more detailed description of the project details can be found in the Github repo (musicmaker.pdf).",
-		image: require('./assets/music.jpg'),
-		github: "https://github.com/drewjex/BookTracker",
+		image: require('./assets/music1.jpg'),
+		github: "https://github.com/drewjex/MusicMaker-v2",
 		project_url: "",
 		tags: [
 			"PHP"
@@ -48,7 +49,7 @@ let projects = [
 	},
 	{
 		title: "Outdoors Unlimited",
-		description: "I have written several versions of this site for Outdoors Unlimited at BYU. They are currently in the process of deciding their needs for the site. As a result, I have posted two implementations of the same site. This site allows users to reserve rental equipment in advance, create accounts, pay online, and view orders. The site uses a SOAP Interface to interact with the third-party reservation system. The site also uses PHP and a MySQL database to handle backend operations.",
+		description: "I built this application for the popular Outdoors Unlimited store in Provo, UT. This Wordpress site integrates with a third-party SOAP interface to allow for online reservations, and uses the popular Woocommerce plugin, with modifications, to handle rental items.",
 		image: require('./assets/outdoors.jpg'),
 		github: "",
 		project_url: "https://outdoors.byu.edu/",
@@ -60,7 +61,7 @@ let projects = [
 	},
 	{
 		title: "Reading Tracker",
-		description: "I wrote this project while serving as a volunteer in Bangkok, Thailand. It provides a place for people to keep track of reading scriptures. Users can create accounts, check-off chapters they've read, and then compare their reading to friends. Organizations in India and Mongolia also used this website, so I wrote it to be flexible with other languages.",
+		description: "I wrote this project while serving as a volunteer in Bangkok, Thailand in PHP, Javascript, and MySQL. Users can create accounts, check-off chapters they've read, and then compare their reading to friends. Organizations in India and Mongolia also requested this website, so I wrote it to be flexible with other languages.",
 		image: require('./assets/scriptureTracker.jpg'),
 		github: "",
 		project_url: "",
@@ -72,55 +73,53 @@ let projects = [
 	},
 	{
 		title: ".NET Components",
-		description: "This is a really cool thing I did.",
-		image: require('./assets/booktracker.jpg'),
+		description: "I built several custom .NET components to work better with the MVVM framework common in WPF applications. The ObservableState allows for easy assignment of event-handlers to changes in state. The TrulyObservableCollection, also on github, allows for collections of data raise notifications whenever any piece of data within the collection is changed.",
+		image: require('./assets/net.jpg'),
 		github: "https://github.com/drewjex/ObservableState",
 		project_url: "",
 		tags: [
-			"PHP",
-			"Javascript",
-			"MySQL"
+			".NET",
+			"C#"
 		]
 	},
 	{
 		title: "WPF Components",
-		description: "This is a really cool thing I did.",
-		image: require('./assets/booktracker.jpg'),
+		description: "WPF Components include a custom multi-thumb color range-slider and a collapsible datagrid component.",
+		image: require('./assets/wpf.jpg'),
 		github: "https://github.com/drewjex/WPFColorSliderComponent",
 		project_url: "",
 		tags: [
-			"PHP",
-			"Javascript",
-			"MySQL"
+			"WPF",
+			"XAML"
 		]
 	},
 	{
 		title: "LineView",
-		description: "This is a really cool thing I did.",
-		image: require('./assets/booktracker.jpg'),
+		description: "Built with ASP.NET, Javascript, C#, and SQL Server. The web application allows airplane-mechanics the ability to manage electronic aircraft records. To protect company confidentiality, the full project is unfortunately, unavailable.",
+		image: require('./assets/line.jpg'),
 		github: "",
 		project_url: "",
 		tags: [
-			"PHP",
+			"ASP.NET",
 			"Javascript",
-			"MySQL"
+			"SQL Server"
 		]
 	},
 	{
 		title: "SkyTrack",
-		description: "This is a really cool thing I did.",
-		image: require('./assets/booktracker.jpg'),
+		description: "I built several screens and front-end components for this robust Windows desktop application using .NET and WPF.",
+		image: require('./assets/skytrack.jpg'),
 		github: "",
 		project_url: "",
 		tags: [
-			"PHP",
-			"Javascript",
-			"MySQL"
+			".NET",
+			"WPF",
+			"WinForms"
 		]
 	},
 	{
 		title: "The Ryde",
-		description: "This is a really cool thing I did.",
+		description: "This site was developed in Drupal for The Ryde, the bus service that operates in south Provo. I participated in helping design and develop the front-end components to be responsive and mobile-friendly.",
 		image: require('./assets/ryde.jpg'),
 		github: "",
 		project_url: "http://www.studentmovement.com/",
@@ -129,7 +128,7 @@ let projects = [
 			"Javascript",
 			"Drupal"
 		]
-	}
+	},
 ];
 
 // const imgId = [1011, 883, 1074, 823, 64, 65, 839, 314, 256, 316, 92,643];
