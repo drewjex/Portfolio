@@ -61,7 +61,7 @@ let projects = [
 	},
 	{
 		title: "Reading Tracker",
-		description: "I wrote this project while serving as a volunteer in Bangkok, Thailand in PHP, Javascript, and MySQL. Users can create accounts, check-off chapters they've read, and then compare their reading to friends. Organizations in India and Mongolia also requested this website, so I wrote it to be flexible with other languages.",
+		description: "I wrote this project while serving as a volunteer in Bangkok, Thailand. It is written in PHP, Javascript, and uses a MySQL database. Users can create accounts, check-off chapters they've read, and then compare their reading to friends. Organizations in India and Mongolia also requested this website, so I wrote it to be flexible with other languages.",
 		image: require('./assets/scriptureTracker.jpg'),
 		github: "",
 		project_url: "",
@@ -73,7 +73,7 @@ let projects = [
 	},
 	{
 		title: ".NET Components",
-		description: "I built several custom .NET components to work better with the MVVM framework common in WPF applications. The ObservableState allows for easy assignment of event-handlers to changes in state. The TrulyObservableCollection, also on github, allows for collections of data raise notifications whenever any piece of data within the collection is changed.",
+		description: "I built several custom .NET components to work better with the MVVM framework common in WPF applications. The ObservableState allows for easy assignment of event-handlers to changes in state. The TrulyObservableCollection, also on github, allows for data-collections to raise notifications whenever any piece of data within the collection is changed.",
 		image: require('./assets/net.jpg'),
 		github: "https://github.com/drewjex/ObservableState",
 		project_url: "",
