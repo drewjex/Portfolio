@@ -378,6 +378,16 @@ span {
 		zoom:400%;
 	}
 
+	[class*='close-'] {
+		color: white;
+		text-shadow: 0 1px 0 black;
+	}
+	
+	[class*='close-']:hover {
+		color:#777;
+		text-shadow: 0 1px 0 black;
+	}
+
 	.text-container h2 {
 		font-size:60px;
 	}
