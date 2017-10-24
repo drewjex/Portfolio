@@ -33,9 +33,14 @@ export class Modal extends React.Component {
             <p className="small-text">
               {this.props.tile.description}
             </p>
-            {this.props.tile.project_url != "" &&
+            {this.props.tile.project_url != "" && this.props.tile.title != "BookTracker" &&
             <a href={this.props.tile.project_url} target='_blank' className='btn-link'>
               Go to Project
+            </a>
+            }
+            {this.props.tile.title == "BookTracker" &&
+            <a href={this.props.tile.project_url} target='_blank' className='btn-link'>
+              Go to Demo
             </a>
             }
             {this.props.tile.github != "" &&
