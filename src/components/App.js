@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Masonry, Tile } from './Masonry';
 
-
 export class App extends React.Component {
 	constructor(props) {
 		super(props);
@@ -36,7 +35,7 @@ export class App extends React.Component {
 		return (
 			<div className="container">
 				<div className="buttons">
-					<a href='../src/assets/resume.pdf' target='_blank' className="btn">
+					<a href={this.props.resume} target='_blank' className="btn">
 						Resume
 					</a>
 					<a href='https://github.com/drewjex' target='_blank' className="btn">

@@ -134,6 +134,8 @@ let projects = [
 	},
 ];
 
+let resumeFile = require('./assets/resume.pdf');
+
 let aboutMe = {
 	title: "About Me!",
 	image: require('./assets/me2.JPG'),
@@ -171,4 +173,5 @@ let aboutMe = {
 
 ReactDOM.render(<App projects = {projects} 
 										 aboutMe={aboutMe}
+										 resume={resumeFile}
                      breakPoints={breakPoints}/>, document.querySelector("#app"));
