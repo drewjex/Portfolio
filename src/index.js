@@ -33,7 +33,7 @@ let projects = [
 		A more detailed description of the project details can be found in the Github repo (musicmaker.pdf).`,
 		image: require('./assets/music1.jpg'),
 		github: "https://github.com/drewjex/MusicMaker-v2",
-		project_url: "http://drewjex.x10host.com/musicmaker/",
+		project_url: "http://drewjex.x10host.com/musicmaker/client/",
 		tags: [
 			"PHP"
 		]
