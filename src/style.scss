@@ -316,6 +316,27 @@ span {
 	float:left;
 }
 
+.footer-container {
+	position: absolute;
+	/* bottom: 0; */
+	margin-top: 20px;
+	height: 22px;
+	padding-top: 6px;
+	background: black;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.footer {
+	position:absolute;
+	left:50%;
+	transform: translateX(-50%);
+	color: white;
+	height: 30px;
+	font-size: x-small;
+}
+
 @media only screen and (max-device-width: 710px) {
 	.djfull {
 		display:none;
