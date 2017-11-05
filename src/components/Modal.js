@@ -21,7 +21,7 @@ export class Modal extends React.Component {
   render() {
     return (
       <div className="modal-background">
-        <div className="modal">
+        <div className={"modal" + (this.props.isAboutMe ? ' modal-about-me' : '')}>
           <a href="#" 
              className="close-thick"
              onClick={this.CloseModal}/>

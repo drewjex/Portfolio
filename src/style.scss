@@ -144,6 +144,10 @@ body {
   filter: blur(5px);
 }
 
+.modal-about-me {
+	top:40% !important;
+}
+
 .modal {
 	transition: all .3s ease-in;
 	animation: fadeIn .3s ease-in;

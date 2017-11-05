@@ -81,6 +81,7 @@ export class App extends React.Component {
 						})}
 					</Masonry>
 				</div>
+				<div>This site was built using <b>React</b></div>
 			</div>
 		)
 	}
