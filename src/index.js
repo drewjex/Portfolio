@@ -17,7 +17,7 @@ let projects = [
 		description: "I worked directly with several employees at BYU's University Accessibility Center to personally design, develop, and deploy a robust MVC PHP/Javascript administration application. The app provides a student portal where students can submit books for conversion and an admin portal where employees and administrators can receive requests, track book statuses, send emails, manage employees, and much more. A variety of JQuery and Javascript libraries were used on the front-end, which make ajax requests to save data and update the MySQL database. To comply with student protections under FERPA law, only an incomplete demo site is available for viewing.",
 		image: require('./assets/booktracker.jpg'),
 		github: "https://github.com/drewjex/BookTracker",
-		project_url: "http://uacadmin.drewjex.com/booktracker/production/",
+		project_url: "http://drewjex.x10host.com/booktracker/",
 		tags: [
 			"PHP",
 			"Javascript",
@@ -33,7 +33,7 @@ let projects = [
 		A more detailed description of the project details can be found in the Github repo (musicmaker.pdf).`,
 		image: require('./assets/music1.jpg'),
 		github: "https://github.com/drewjex/MusicMaker-v2",
-		project_url: "http://musicmaker.drewjex.com/musicmaker/client/",
+		project_url: "http://drewjex.x10host.com/musicmaker/",
 		tags: [
 			"PHP"
 		]
