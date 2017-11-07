@@ -81,11 +81,6 @@ export class App extends React.Component {
 						})}
 					</Masonry>
 				</div>
-				<div className='footer-container'>
-					<div className="footer">
-						This site was built with <b>React</b> and is hosted with <b>Netlify</b>.
-					</div>
-				</div>
 			</div>
 		)
 	}
