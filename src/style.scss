@@ -330,7 +330,7 @@ span {
 }
 
 .footer {
-	position:absolute;
+	position:relative;
 	left:50%;
 	transform: translateX(-50%);
 	color: white;
@@ -342,6 +342,15 @@ span {
 @media only screen and (max-device-width: 710px) {
 	.djfull {
 		display:none;
+	}
+
+	.footer {
+		font-size:xx-large;
+	}
+
+	.footer-container {
+		height:80px;
+		padding-top: 24px;
 	}
 
 	.djabv {
