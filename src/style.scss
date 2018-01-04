@@ -116,7 +116,7 @@ body {
 
 			&.blue {
 				//background: rgba(3, 93, 228, 0.2);
-				background: rgba(46, 150, 224, 0.5);
+				background: rgba(46, 150, 224, 0.8);
 			}
 
 			&.yellow {
@@ -272,6 +272,7 @@ span {
 	top:0;
 	right:0;
 	left:0;
+	border-top: 4px solid #2e96e0;
 	line-height:45px;
 	height:60px;
 	-webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
