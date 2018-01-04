@@ -19,10 +19,10 @@ let projects = [
 		github: "https://github.com/drewjex/BookTracker",
 		project_url: "http://drewjex.x10host.com/booktracker/",
 		tags: [
-			"PHP",
 			"Javascript",
+			"JQuery",
 			"MySQL",
-			"JQuery"
+			"PHP"
 		]
 	},
 	{
@@ -41,13 +41,13 @@ let projects = [
 	{
 		title: "EventTickets",
 		description:`While employed at BYU, I worked on the admin side of this site, including creating features to allow users to broadcast their own events and manage ticket sales. Developed primarily in PHP, Javascript, Jquery, and the Smarty framework, this site is used to sell tickets for many big events and programs around campus, including concerts, festivals, etc.`,
-		image: require('./assets/eventtickets.jpg'),
+		image: require('./assets/tech3.jpg'), //require('./assets/eventtickets.jpg'),
 		github: "https://github.com/drewjex/event-editor",
 		project_url: "https://eventtickets.byu.edu/",
 		tags: [
-			"PHP",
 			"Javascript",
-			"Smarty"
+			"PHP",
+			"Smarty MVC Framework"
 		]
 	},
 	{
@@ -77,7 +77,7 @@ let projects = [
 	{
 		title: ".NET Components",
 		description: `While employed at SkyWest, I built several custom .NET components to work better with the MVVM framework common in WPF applications. The ObservableState allows for easy assignment of event-handlers to changes in state. The TrulyObservableCollection, also on github, allows for data-collections to raise notifications whenever any piece of data within the collection is changed.`,
-		image: require('./assets/net.jpg'),
+		image: require('./assets/tech2.jpg'),//'https://unsplash.it/750/750?image=0', //require('./assets/net.jpg'),
 		github: "https://github.com/drewjex/ObservableState",
 		project_url: "",
 		tags: [
@@ -88,7 +88,7 @@ let projects = [
 	{
 		title: "WPF Components",
 		description: `While employed at SkyWest, I designed various original WPF components. Two of my favorites include a custom multi-thumb color range-slider and a collapsible datagrid component.`,
-		image: require('./assets/wpf.jpg'),
+		image: require('./assets/tech1.jpg'),
 		github: "https://github.com/drewjex/WPFColorSliderComponent",
 		project_url: "",
 		tags: [
@@ -127,9 +127,8 @@ let projects = [
 		github: "",
 		project_url: "http://www.studentmovement.com/",
 		tags: [
-			"PHP",
 			"Javascript",
-			"Drupal"
+			"CSS"
 		]
 	},
 ];
@@ -139,7 +138,7 @@ let resumeFile = require('./assets/resume.pdf');
 let aboutMe = {
 	title: "About Me!",
 	image: require('./assets/me2.JPG'),
-	description: `I love learning and I love creating. I am an avid tennis player and I enjoy being outside. I love music and playing the piano. My family is most important to me. I am always open to new experiences that enhance my abilities as a software developer. Say hi to me @ drewjex28@gmail.com!`,
+	description: `I love learning and I love creating. I am passionate about building rich user experiences using the most recent web technologies. I am an avid tennis player and I enjoy being outside. I love music and playing the piano. My family is most important to me. Say hi to me @ drewjex28@gmail.com.`,
 	github: "",
 	project_url: ""
 };
