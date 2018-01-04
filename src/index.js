@@ -41,7 +41,7 @@ let projects = [
 	{
 		title: "EventTickets",
 		description:`While employed at BYU, I worked on the admin side of this site, including creating features to allow users to broadcast their own events and manage ticket sales. Developed primarily in PHP, Javascript, Jquery, and the Smarty framework, this site is used to sell tickets for many big events and programs around campus, including concerts, festivals, etc.`,
-		image: require('./assets/tech3.jpg'), //require('./assets/eventtickets.jpg'),
+		image: require('./assets/tech6.jpg'), //require('./assets/eventtickets.jpg'),
 		github: "https://github.com/drewjex/event-editor",
 		project_url: "https://eventtickets.byu.edu/",
 		tags: [
@@ -77,7 +77,7 @@ let projects = [
 	{
 		title: ".NET Components",
 		description: `While employed at SkyWest, I built several custom .NET components to work better with the MVVM framework common in WPF applications. The ObservableState allows for easy assignment of event-handlers to changes in state. The TrulyObservableCollection, also on github, allows for data-collections to raise notifications whenever any piece of data within the collection is changed.`,
-		image: require('./assets/tech2.jpg'),//'https://unsplash.it/750/750?image=0', //require('./assets/net.jpg'),
+		image: require('./assets/tech4.jpg'),//'https://unsplash.it/750/750?image=0', //require('./assets/net.jpg'),
 		github: "https://github.com/drewjex/ObservableState",
 		project_url: "",
 		tags: [
@@ -88,7 +88,7 @@ let projects = [
 	{
 		title: "WPF Components",
 		description: `While employed at SkyWest, I designed various original WPF components. Two of my favorites include a custom multi-thumb color range-slider and a collapsible datagrid component.`,
-		image: require('./assets/tech1.jpg'),
+		image: require('./assets/tech5.jpg'),
 		github: "https://github.com/drewjex/WPFColorSliderComponent",
 		project_url: "",
 		tags: [
