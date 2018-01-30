@@ -19,7 +19,7 @@ let projects = [
 		github: "https://github.com/drewjex/BookTracker",
 		project_url: "http://drewjex.x10host.com/booktracker/",
 		tags: [
-			"Javascript",
+			"JavaScript",
 			"JQuery",
 			"MySQL",
 			"PHP"
@@ -35,6 +35,7 @@ let projects = [
 		github: "https://github.com/drewjex/MusicMaker-v2",
 		project_url: "http://drewjex.x10host.com/musicmaker/client/",
 		tags: [
+			"JavaScript",
 			"PHP"
 		]
 	},
@@ -45,9 +46,7 @@ let projects = [
 		github: "https://github.com/drewjex/event-editor",
 		project_url: "https://eventtickets.byu.edu/",
 		tags: [
-			"Javascript",
-			"PHP",
-			"Smarty MVC Framework"
+			"JavaScript"
 		]
 	},
 	{
@@ -57,9 +56,8 @@ let projects = [
 		github: "",
 		project_url: "https://outdoors.byu.edu/",
 		tags: [
-			"PHP",
-			"Javascript",
-			"Wordpress"
+			"JavaScript",
+			"PHP"
 		]
 	},
 	{
@@ -69,8 +67,8 @@ let projects = [
 		github: "",
 		project_url: "",
 		tags: [
+			"JavaScript",
 			"PHP",
-			"Javascript",
 			"MySQL"
 		]
 	},
@@ -103,8 +101,8 @@ let projects = [
 		github: "",
 		project_url: "",
 		tags: [
+			"JavaScript",
 			"ASP.NET",
-			"Javascript",
 			"SQL Server"
 		]
 	},
@@ -116,8 +114,7 @@ let projects = [
 		project_url: "",
 		tags: [
 			".NET",
-			"WPF",
-			"WinForms"
+			"WPF"
 		]
 	},
 	{
@@ -127,8 +124,7 @@ let projects = [
 		github: "",
 		project_url: "http://www.studentmovement.com/",
 		tags: [
-			"Javascript",
-			"CSS"
+			"JavaScript"
 		]
 	},
 ];
