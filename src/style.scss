@@ -10,6 +10,20 @@ body {
 	overflow-y:scroll;
 }  
 
+@keyframes glaucoma {
+  from {
+    opacity: 1;
+    text-shadow: 0 0 75px black;
+    color: transparent;
+  }
+
+  to {
+    opacity: 1;
+    text-shadow: 0;
+    color: transparent;
+  }
+}
+
 .container {
 	overflow:hidden;
 	p {
@@ -26,7 +40,7 @@ body {
 .masonry-container{
 	width: 100%;
 	margin: auto;
-	margin-top: 70px;
+	margin-top: 40px;
 	border: 0px solid rgba(0,0,0,.1);
 }
 .masonry{
@@ -49,6 +63,7 @@ body {
 	margin-bottom:-5px;
 }
 .tile{
+	// border:4px solid #eee;
 	margin: 15px;
 	position: relative;
 	font-size:26px;
@@ -148,6 +163,67 @@ body {
 
 .modal-about-me {
 	top:40% !important;
+}
+
+.intro {
+	height:600px;
+	width:100%;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	//background: #fefefe;
+	background-image: url('assets/IMG_6722-min.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	-webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+}
+
+.my-work {
+	color:white;
+	font-size:18px;
+	margin-top:100px;
+	text-align:center;
+	text-transform: uppercase; 
+	 height: 1px;
+	// background: #cccccc;
+	// border-bottom: #ccc solid 1px;
+	margin-bottom: 30px;
+	position: relative;
+	width:60%;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+.my-work h3 {
+	position: absolute;
+	top: -43px;
+	// background:#000;
+	text-align:center;
+	width:300px;
+	left:50%;
+	transform: translateX(-50%);
+	font-weight:100;
+
+	&:before {
+		content: '';
+    background: white;
+    width: 300px;
+    height: 1px;
+    left: -244px;
+    top: 16px;
+    position: absolute;
+	}
+
+	&:after {
+		content: '';
+    background: white;
+    width: 300px;
+    height: 1px;
+    left: 244px;
+    top: 16px;
+    position: absolute;
+	}
 }
 
 .modal {
@@ -280,6 +356,9 @@ span {
 	-webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+	animation-name: glaucoma;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
 }
 
 .btn:hover {

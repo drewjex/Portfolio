@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { Masonry, Tile } from './Masonry';
+import { Intro } from './Intro';
+import { MyWork } from './MyWork';
 
 export class App extends React.Component {
 	constructor(props) {
@@ -60,7 +62,8 @@ export class App extends React.Component {
 						SO
 					</a>
 				</div>
-				{/* <p>Drew Jex</p> */}
+				<Intro />
+				<MyWork />
 				<div className="masonry-container">
 					<Masonry breakPoints={this.props.breakPoints}
 									 ToggleModal={this.ToggleModal}
