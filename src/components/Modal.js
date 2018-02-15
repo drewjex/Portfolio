@@ -12,7 +12,7 @@ export class Modal extends React.Component {
     const masonry = document.querySelector(".masonry");
     const modal = document.querySelector(".modal");
     const modalBackground = document.querySelector(".modal-background");
-    modal.addEventListener("transitionend", this.props.ToggleModal.bind(this, this.props.id));
+    modal.addEventListener("transitionend", this.props.ToggleModal(this.props.id));
     modal.style.opacity = `0`;
     modalBackground.style.opacity = `0`;
     masonry.classList.remove('blur');
