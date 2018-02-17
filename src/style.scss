@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
 	padding: 0;
-	background: linear-gradient(to right, #333, #222); //linear-gradient(to right, #4D4D4D, #252525);
+	background: linear-gradient(to right, #222, #111); //linear-gradient(to right, #4D4D4D, #252525);
   //background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%); //linear-gradient(to right, #4D4D4D, #252525);
 	font-family: Ubuntu, sans-serif;
 	overflow-y:scroll;
@@ -267,7 +267,7 @@ body {
 
 .intro {
 	height:600px;
-	width:100%;
+	//width:100%;
 	font-family: 'Quicksand', sans-serif;
 	display: flex;
 	flex-direction: row;
@@ -619,14 +619,13 @@ span {
 
 @media only screen and (max-device-width: 710px) {
 	.intro {
-		flex-direction:column-reverse;
 		padding: 0 20px;
 	}
 
 	.intro img {
 		display:none;
 	}
-	
+
 	.djfull {
 		display:none;
 	}
@@ -719,7 +718,6 @@ span {
 
 @media only screen and (max-width: 930px) {
 	.intro {
-		flex-direction:column-reverse;
 		padding: 0 20px;
 	}
 

@@ -73,13 +73,13 @@ export class Intro extends React.Component {
 						<h1>Creator</h1> */}
 					</div>
 					<div className='row'>
-						<p>JavaScript Architect specializing in rich user design and awesome front-end experiences.</p>
+						<p>Software Architect specializing in rich UI design and functional user experiences.</p>
 					</div>
 					<div className='row'>
-						<p>Yeah baby. You better believe it. Seriously, just believe it right now.</p>
+						<p>Linux is my favorite, but I'm flexible. Big fan of JavaScript (ES6+).</p>
 					</div>
 					<div className='row'>
-						<p>Oh yeah, and I love tennis.</p>
+						<p>Love to learn, love to code, and play some tennis on the side.</p>
 					</div>
 					<div className='row'>
 						<a className='btn-link' href='#my-work'>See My Work</a>
