@@ -62,8 +62,10 @@ export class App extends React.Component {
 						SO
 					</a>
 				</div>
-				<Intro />
-				<MyWork />
+				<Intro isAboutMe={this.state.showAboutMe}
+							 showModal={this.state.showModal} />
+				<MyWork isAboutMe={this.state.showAboutMe}
+							  showModal={this.state.showModal}/>
 				<div className="masonry-container">
 					<Masonry breakPoints={this.props.breakPoints}
 									 ToggleModal={this.ToggleModal}
