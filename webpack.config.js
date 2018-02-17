@@ -9,7 +9,12 @@ module.exports = {
   },
   module: {
     rules: [
-      {test: /\.(js)$/, use: 'babel-loader'},
+      {test: /\.(js)$/, use: [{
+        loader: 'babel-loader',
+        options: {
+          ignore: '/node_modules/'        
+        }
+      }]},
       {test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader']},
       {test: /\.(png|jpg|PNG|JPG)$/, loader: 'url-loader' },
       {
