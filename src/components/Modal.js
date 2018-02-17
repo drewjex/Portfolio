@@ -37,6 +37,12 @@ export class Modal extends React.Component {
             <p className="small-text">
               {this.props.tile.description}
             </p>
+            {this.props.isAboutMe &&
+              <ul className="small-text">
+                <li>Email: {this.props.tile.email}</li>
+                <li>Phone: {this.props.tile.phone}</li>
+              </ul>
+            }
             {this.props.tile.project_url != "" && this.props.tile.title != "BookTracker" &&
             <a href={this.props.tile.project_url} target='_blank' className='btn-link'>
               Go to Project

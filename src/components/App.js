@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Masonry, Tile } from './Masonry';
 import { Intro } from './Intro';
 import { MyWork } from './MyWork';
+import { Loading } from './Loading';
 
 export class App extends React.Component {
 	constructor(props) {
@@ -10,7 +11,8 @@ export class App extends React.Component {
 			showModal: false,
 			showAboutMe: false,
 			selectedIndex: 0,
-			selectedTile: {}
+			selectedTile: {},
+			loading:true
 		}
 		this.ToggleModal = this.ToggleModal.bind(this);
 		this.ToggleAboutMe = this.ToggleAboutMe.bind(this);
@@ -33,62 +35,79 @@ export class App extends React.Component {
 		})
 	}
 
+	componentDidMount() {
+		let loading = document.querySelector('.loading');
+		let content = document.querySelector('.content');
+		loading.classList.add('visible-vis');
+		this.refs.Masonry.onResize();
+		setTimeout(() => content.style.visibility = `visible`,1000);
+		setTimeout(() => {
+			loading.classList.remove('visible-vis');
+			loading.classList.add('hidden-vis');	
+		},2000);
+	}
+
   render(){
 		return (
 			<div className="container">
-				<div className="buttons">
-					<a href={this.props.resume} target='_blank' className="btn">
-						Resume
-					</a>
-					<a href='https://github.com/drewjex' target='_blank' className="btn">
-						GitHub
-					</a>
-					<p className='btn blue djfull' onClick={this.ToggleAboutMe}>
-						Drew Jex
-					</p>
-					<p className='btn blue djabv hidden' onClick={this.ToggleAboutMe}>
-						DJ
-					</p>
-					<a href='https://linkedin.com/in/drewjex' target='_blank' className="btn lifull">
-						LinkedIn
-					</a>
-					<a href='https://linkedin.com/in/drewjex' target='_blank' className="btn liabv hidden">
-						LI
-					</a>
-					<a href='https://stackoverflow.com/users/8060919/drew-jex' target='_blank' className="btn sofull">
-						Stack Overflow
-					</a>
-					<a href='https://stackoverflow.com/users/8060919/drew-jex' target='_blank' className="btn soabv hidden">
-						SO
-					</a>
-				</div>
-				<Intro isAboutMe={this.state.showAboutMe}
-							 showModal={this.state.showModal} />
-				<MyWork isAboutMe={this.state.showAboutMe}
-							  showModal={this.state.showModal}/>
-				<div className="masonry-container">
-					<Masonry breakPoints={this.props.breakPoints}
-									 ToggleModal={this.ToggleModal}
-									 ToggleAboutMe={this.ToggleAboutMe}
-									 isAboutMe={this.state.showAboutMe}
-									 aboutMe={this.props.aboutMe}
-									 showModal={this.state.showModal}
-									 selectedTile={this.state.selectedTile}>
-						{this.props.projects.map((project, id) => {
-							return (
-								<Tile key={id}
-											ID={id}
-										  ToggleModal={this.ToggleModal}
-											title={project.title}
-											tags={project.tags}
-                      src={project.image} />
-							) 
-						})}
-					</Masonry>
-				</div>
-				<div className='footer-container'>
-					<div className="footer">
-						This site was built with <b>React</b> and is hosted with <b>Netlify</b>.
+				<Loading />
+				<div className='content' style={{visibility:'hidden'}}> 
+					<div className="buttons">
+						<a href={this.props.resume} target='_blank' className="btn">
+							Resume
+						</a>
+						<a href='https://github.com/drewjex' target='_blank' className="btn">
+							GitHub
+						</a>
+						<p className='btn blue djfull my-name' onClick={this.ToggleAboutMe}>
+							Drew Jex
+						</p>
+						<p className='btn blue djabv my-name hidden' onClick={this.ToggleAboutMe}>
+							DJ
+						</p>
+						<a href='https://linkedin.com/in/drewjex' target='_blank' className="btn lifull">
+							LinkedIn
+						</a>
+						<a href='https://linkedin.com/in/drewjex' target='_blank' className="btn liabv hidden">
+							LI
+						</a>
+						<a href='https://stackoverflow.com/users/8060919/drew-jex' target='_blank' className="btn sofull">
+							Stack Overflow
+						</a>
+						<a href='https://stackoverflow.com/users/8060919/drew-jex' target='_blank' className="btn soabv hidden">
+							SO
+						</a>
+					</div>
+					<Intro isAboutMe={this.state.showAboutMe}
+								 showModal={this.state.showModal}
+								 ToggleAboutMe={this.ToggleAboutMe} />
+					<MyWork isAboutMe={this.state.showAboutMe}
+									showModal={this.state.showModal}/>
+					<div className="masonry-container">
+						<Masonry ref="Masonry" 
+										breakPoints={this.props.breakPoints}
+										ToggleModal={this.ToggleModal}
+										ToggleAboutMe={this.ToggleAboutMe}
+										isAboutMe={this.state.showAboutMe}
+										aboutMe={this.props.aboutMe}
+										showModal={this.state.showModal}
+										selectedTile={this.state.selectedTile}>
+							{this.props.projects.map((project, id) => {
+								return (
+									<Tile key={id}
+												ID={id}
+												ToggleModal={this.ToggleModal}
+												title={project.title}
+												tags={project.tags}
+												src={project.image} />
+								) 
+							})}
+						</Masonry>
+					</div>
+					<div className='footer-container'>
+						<div className="footer">
+							This site was built with <b>React</b> and is hosted with <b>Netlify</b>.
+						</div>
 					</div>
 				</div>
 			</div>

@@ -4,11 +4,67 @@ body {
   box-sizing: border-box;
   margin: 0;
 	padding: 0;
-	background: linear-gradient(to right, #666, #444); //linear-gradient(to right, #4D4D4D, #252525);
+	background: linear-gradient(to right, #333, #222); //linear-gradient(to right, #4D4D4D, #252525);
   //background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%); //linear-gradient(to right, #4D4D4D, #252525);
 	font-family: Ubuntu, sans-serif;
 	overflow-y:scroll;
 }  
+
+* {
+	transition: all .5s;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.cube1, .cube2 {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
 
 @keyframes glaucoma {
   from {
@@ -24,6 +80,26 @@ body {
   }
 }
 
+.txt-rotate > .wrap { 
+  border-right: 0.08em solid #222;
+  animation: blink-caret;
+  animation-duration: 0s;
+  animation-iteration-count: infite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #222 }
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
 .container {
 	overflow:hidden;
 	p {
@@ -35,6 +111,29 @@ body {
 		text-transform: none;
 		color:white;
 	}
+}
+
+.loading {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:99999;
+	background:#000;
+	opacity:0;
+}
+
+.visible-vis {
+	visibility:visible;
+	opacity:1;
+	transition: opacity 1s linear;
+}
+
+.hidden-vis {
+	visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
 }
 
 .masonry-container{
@@ -64,13 +163,14 @@ body {
 }
 .tile{
 	// border:4px solid #eee;
-	margin: 15px;
+	margin: 2px;
+	margin-bottom:6px;
 	position: relative;
 	font-size:26px;
 	overflow:hidden;
 	z-index: 1;
 	transition: all .1s ease-in-out;
-	border-radius: 4px;
+	border-radius: 2px;
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
 	.picture {
 		margin-bottom:-7px;
@@ -144,7 +244,7 @@ body {
 	&:hover {
 		//font-size:24px;
 		opacity:1;
-		transform: scale(1.05);
+		transform: scale(1.02);
 		-webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
 		box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
@@ -188,6 +288,10 @@ body {
 	font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
 }
 
+.blue-color {
+	color: rgba(46, 150, 224, 0.8);
+}
+
 .row {
 	display:flex;
 	flex-direction:row;
@@ -206,26 +310,37 @@ body {
 	margin-left:5px;
 }
 
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .intro img {
+	//animation: 1s ease-out 0s 1 slideInFromBottom;
 	width: 575px;
 	margin-top:427px;
 }
 
 .intro h1 {
+	//animation: 1s ease-out 0s 1 slideInFromBottom;
 	margin-left:5px;
 	margin-right:5px;
 	font-size:46px;
 }
 
-.intro h1:after {
-	content:'/';
-	position:relative;
-	left:6px;
-}
+// .intro h1:after {
+// 	content:'/';
+// 	position:relative;
+// 	left:6px;
+// }
 
-.intro h1:last-child:after {
-	content:'';
-}
+// .intro h1:last-child:after {
+// 	content:'';
+// }
 
 .my-work {
 	color:white;
@@ -255,7 +370,7 @@ body {
 
 	&:before {
 		content: '';
-    background: white;
+    background: -webkit-gradient(radial, 100% 100%, 0, 0 0, 350, from(#fff), to(#000));
     width: 300px;
     height: 1px;
     left: -244px;
@@ -265,7 +380,7 @@ body {
 
 	&:after {
 		content: '';
-    background: white;
+    background: -webkit-gradient(radial, 0 0, 0, 50% 50%, 350, from(#fff), to(#000));
     width: 300px;
     height: 1px;
     left: 244px;
@@ -367,6 +482,7 @@ body {
 
 .small-text {
 	font-size: 16px !important;
+	list-style:none;
 }
 
 span {
@@ -386,6 +502,31 @@ span {
 	display: inline-block;
 	background:black;
 	color:#aaa;
+	position:relative;
+}
+
+.btn:after {
+	content: '';
+  height: 50%; //You can change this if you want smaller/bigger borders
+  width: 1px;
+
+  position: absolute;
+  right: 0;
+  top: 25%; // If you want to set a smaller height and center it, change this value
+
+  background-color: #444; // The color of your border
+}
+
+.btn:last-child:after {
+	content:'';
+	width:0px;
+}
+
+.my-name {
+	flex:2;
+	font-size:50px;
+	font-weight:900;
+	text-transform: uppercase !important;
 }
 
 .buttons {
@@ -411,7 +552,7 @@ span {
 
 .btn:hover {
 	cursor: pointer;
-	border-bottom: 2px solid rgb(46, 150, 224);
+	border-bottom: 2px solid rgb(46, 150, 224) !important;
 }
 
 .btn-link {
@@ -477,6 +618,15 @@ span {
 }
 
 @media only screen and (max-device-width: 710px) {
+	.intro {
+		flex-direction:column-reverse;
+		padding: 0 20px;
+	}
+
+	.intro img {
+		display:none;
+	}
+	
 	.djfull {
 		display:none;
 	}
@@ -568,6 +718,15 @@ span {
 }
 
 @media only screen and (max-width: 930px) {
+	.intro {
+		flex-direction:column-reverse;
+		padding: 0 20px;
+	}
+
+	.intro img {
+		display:none;
+	}
+
 	.djfull {
 		display:none;
 	}

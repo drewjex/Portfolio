@@ -134,7 +134,9 @@ let resumeFile = require('./assets/resume.pdf');
 let aboutMe = {
 	title: "About Me!",
 	image: require('./assets/me2.JPG'),
-	description: `I love learning and I love creating. I am passionate about building rich user experiences using the most recent web technologies. I am an avid tennis player and I enjoy being outside. I love music and playing the piano. My family is most important to me. Say hi to me @ drewjex28@gmail.com.`,
+	description: `I love learning and I love creating. I am passionate about building rich user experiences using the most recent web technologies. I am an avid tennis player and I enjoy being outside. I love music and playing the piano. My family is most important to me.`,
+	email: `drewjex28@gmail.com`,
+	phone: `385-375-0254`,
 	github: "",
 	project_url: ""
 };

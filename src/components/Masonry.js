@@ -38,7 +38,7 @@ export class Masonry extends React.Component{
 	}
 	componentDidMount(){
 		this.onResize();
-		window.addEventListener('resize', this.onResize)	
+		window.addEventListener('resize', this.onResize)
 	}
 	
 	getColumns(w){
