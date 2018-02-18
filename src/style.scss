@@ -620,6 +620,11 @@ span {
 @media only screen and (max-device-width: 710px) {
 	.intro {
 		padding: 0 20px;
+		padding-top:140px;
+	}
+
+	.row {
+		justify-content:center;
 	}
 
 	.intro img {
