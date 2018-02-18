@@ -1,5 +1,5 @@
 import * as React from 'react';
-import portrait from '../assets/portrait-picture-min.png';
+import portrait from '../assets/portrait-picture-min.jpg';
 
 export class Intro extends React.Component {
 	constructor(props) {
