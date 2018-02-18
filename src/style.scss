@@ -127,13 +127,13 @@ body {
 .visible-vis {
 	visibility:visible;
 	opacity:1;
-	transition: opacity 1s linear;
+	transition: opacity 1.5s linear;
 }
 
 .hidden-vis {
 	visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 1s, opacity 1s linear;
+  transition: visibility 0s 1.5s, opacity 1.5s linear;
 }
 
 .masonry-container{
@@ -525,7 +525,6 @@ span {
 .my-name {
 	flex:2;
 	font-size:50px;
-	font-weight:900;
 	text-transform: uppercase !important;
 }
 
@@ -539,7 +538,7 @@ span {
 	top:0;
 	right:0;
 	left:0;
-	border-top: 4px solid #2e96e0;
+	//border-top: 4px solid #2e96e0;
 	line-height:45px;
 	height:60px;
 	-webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
@@ -552,7 +551,8 @@ span {
 
 .btn:hover {
 	cursor: pointer;
-	border-bottom: 2px solid rgb(46, 150, 224) !important;
+	filter: brightness(120%);
+	border-bottom: 4px solid rgb(46, 150, 224) !important;
 }
 
 .btn-link {
