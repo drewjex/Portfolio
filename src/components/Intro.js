@@ -79,7 +79,7 @@ export class Intro extends React.Component {
 						<p>Linux is my favorite, but I'm flexible. Big fan of JavaScript (ES6+).</p>
 					</div>
 					<div className='row'>
-						<p>Love to learn, love to code, and play some tennis on the side.</p>
+						<p>Love to learn, love to code. Also a huge tennis fanatic. :)</p>
 					</div>
 					<div className='row'>
 						<a className='btn-link' href='#my-work'>See My Work</a>
