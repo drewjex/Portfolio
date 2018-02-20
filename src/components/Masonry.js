@@ -39,9 +39,9 @@ export class Tile extends React.Component {
 																	})}
 				</p>
 				<p className="card__text text__content">
-					Some additional text will go here.
+					{this.props.shortDescription}
 				</p>
-				<button className="btn-link btn2--block card__btn">See More</button>
+				{/* <button className="btn-link btn2--block card__btn">See More</button> */}
 			</div>
 		</div>
 		);

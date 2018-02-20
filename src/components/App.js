@@ -98,6 +98,7 @@ export class App extends React.Component {
 												ID={id}
 												ToggleModal={this.ToggleModal}
 												title={project.title}
+												shortDescription={project.shortDescription}
 												tags={project.tags}
 												src={project.image} />
 								) 

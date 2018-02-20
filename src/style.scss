@@ -825,11 +825,14 @@ img {
 	@media(min-width: 0rem) {
     width: 100%;
   }
+	@media(min-width: 30rem) {
+    width: 49%;
+  }
   @media(min-width: 55rem) {
-    width: 46%;
+    width: 32.5%;
   }
   @media(min-width: 70rem) {
-    width: 24%
+    width: 19.5%
   }
 }
 
@@ -847,7 +850,7 @@ img {
     .card__image {
       filter: contrast(100%);
 		}
-		// transform: scale(1.01);
+	   transform: scale(1.01);
 		// -webkit-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.75);
 		// -moz-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.75);
 		// box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.75);
@@ -946,6 +949,7 @@ img {
 
 .text__content {
 	opacity:.7;
+	margin-top:-5px;
 }
 
 

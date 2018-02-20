@@ -16,6 +16,7 @@ let projects = [
 		title: "BookTracker",
 		description: "I worked directly with several employees at BYU's University Accessibility Center to personally design, develop, and deploy a robust MVC PHP/Javascript administration application. The app provides a student portal where students can submit books for conversion and an admin portal where employees and administrators can receive requests, track book statuses, send emails, manage employees, and much more. A variety of JQuery and Javascript libraries were used on the front-end, which make ajax requests to save data and update the MySQL database. To comply with student protections under FERPA law, only an incomplete demo site is available for viewing.",
 		image: require('./assets/booktracker.jpg'),
+		shortDescription: "Robust Administrative Web Application for BYU's UAC.",
 		github: "https://github.com/drewjex/BookTracker",
 		project_url: "http://drewjex.x10host.com/booktracker/",
 		tags: [
@@ -32,6 +33,7 @@ let projects = [
 		The complex song-analysis process is built in PHP and uses a Javascript MIDI library to play the song to the browser. 
 		A more detailed description of the project details can be found in the Github repo (musicmaker.pdf).`,
 		image: require('./assets/music1.jpg'),
+		shortDescription: "Cutting-edge Spontaneous Music-Generation Software.",
 		github: "https://github.com/drewjex/MusicMaker-v2",
 		project_url: "http://drewjex.x10host.com/musicmaker/client/",
 		tags: [
@@ -43,6 +45,7 @@ let projects = [
 		title: "EventTickets",
 		description:`While employed at BYU, I worked on the admin side of this site, including creating features to allow users to broadcast their own events and manage ticket sales. Developed primarily in PHP, Javascript, Jquery, and the Smarty framework, this site is used to sell tickets for many big events and programs around campus, including concerts, festivals, etc.`,
 		image: require('./assets/tech6.jpg'), //require('./assets/eventtickets.jpg'),
+		shortDescription: "JavaScript web application used by over 40,000 users.",
 		github: "https://github.com/drewjex/event-editor",
 		project_url: "https://eventtickets.byu.edu/",
 		tags: [
@@ -53,6 +56,7 @@ let projects = [
 		title: "Outdoors Unlimited",
 		description: `While employed at BYU, I built this application for the popular Outdoors Unlimited store in Provo, UT. This Wordpress site integrates with a third-party SOAP interface to allow for online reservations, and uses the Woocommerce plugin (with modifications) to handle rental items.`,
 		image: require('./assets/outdoors.jpg'),
+		shortDescription: "Designed and Developed Web App for popular Outdoors company in Provo, UT.",
 		github: "",
 		project_url: "https://outdoors.byu.edu/",
 		tags: [
@@ -64,6 +68,7 @@ let projects = [
 		title: "Reading Tracker",
 		description: "I wrote this project while serving as a volunteer in Bangkok, Thailand. It is written in PHP, Javascript, and uses a MySQL database. Users can create accounts, check-off chapters they've read, and then compare their reading to friends. Organizations in India and Mongolia also requested this website, so I wrote it to be flexible with other languages.",
 		image: require('./assets/scriptureTracker.jpg'),
+		shortDescription: "Scripture Reading-Tracker Web App used by church members throughout Asia.",
 		github: "",
 		project_url: "",
 		tags: [
@@ -76,6 +81,7 @@ let projects = [
 		title: ".NET Components",
 		description: `While employed at SkyWest, I built several custom .NET components to work better with the MVVM framework common in WPF applications. The ObservableState allows for easy assignment of event-handlers to changes in state. The TrulyObservableCollection, also on github, allows for data-collections to raise notifications whenever any piece of data within the collection is changed.`,
 		image: require('./assets/tech4.jpg'),//'https://unsplash.it/750/750?image=0', //require('./assets/net.jpg'),
+		shortDescription: "Custom .NET components I designed to make writing .NET applications easier.",
 		github: "https://github.com/drewjex/ObservableState",
 		project_url: "",
 		tags: [
@@ -87,6 +93,7 @@ let projects = [
 		title: "WPF Components",
 		description: `While employed at SkyWest, I designed various original WPF components. Two of my favorites include a custom multi-thumb color range-slider and a collapsible datagrid component.`,
 		image: require('./assets/tech5.jpg'),
+		shortDescription: "Designed custom UI elements for WPF.",
 		github: "https://github.com/drewjex/WPFColorSliderComponent",
 		project_url: "",
 		tags: [
@@ -98,6 +105,7 @@ let projects = [
 		title: "LineView",
 		description: `Built with ASP.NET, Javascript, C#, and SQL Server, this web application allows airplane-mechanics the ability to manage electronic aircraft records. To protect company confidentiality, the full project is unfortunately, unavailable. My role in this project has included consulting and development. Please feel free to ask me more.`,
 		image: require('./assets/line.jpg'),
+		shortDescription: "Robust JavaScript and ASP.NET web app.",
 		github: "",
 		project_url: "",
 		tags: [
@@ -110,6 +118,7 @@ let projects = [
 		title: "SkyTrack",
 		description: `I built several screens and front-end components for this robust Windows desktop application using .NET and WPF. To protect company confidentiality, the full project is unfortunately, unavailable. My role in this project has included consulting and development. Please feel free to ask me more.`,
 		image: require('./assets/skytrack.jpg'),
+		shortDescription: ".NET/WPF Windows Desktop Application.",
 		github: "",
 		project_url: "",
 		tags: [
@@ -121,6 +130,7 @@ let projects = [
 		title: "The Ryde",
 		description: `While employed with BYU, I developed this site in Drupal for The Ryde (a bus service that operates in South Provo). I participated in helping develop and design the front-end components to be responsive and mobile-friendly.`,
 		image: require('./assets/ryde.jpg'),
+		shortDescription: "Designed, Developed web application used by The Ryde bus service in Provo, UT.",
 		github: "",
 		project_url: "http://www.studentmovement.com/",
 		tags: [
