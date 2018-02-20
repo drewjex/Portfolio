@@ -10,7 +10,9 @@ body {
 	overflow-y:scroll;
 }  
 
-* {
+*::before,
+*::after { 
+	box-sizing: border-box;
 	transition: all .5s;
 }
 
@@ -102,15 +104,6 @@ body {
 
 .container {
 	overflow:hidden;
-	p {
-		margin:0 auto;
-		text-align:center;
-		width:100%;
-		font-family: 'Quicksand', sans-serif;
-		font-size:40px;
-		text-transform: none;
-		color:white;
-	}
 }
 
 .loading {
@@ -266,6 +259,15 @@ body {
 }
 
 .intro {
+	p {
+		margin:0 auto;
+		text-align:center;
+		width:100%;
+		font-family: 'Quicksand', sans-serif;
+		font-size:40px;
+		text-transform: none;
+		color:white;
+	}
 	height:600px;
 	//width:100%;
 	font-family: 'Quicksand', sans-serif;
@@ -500,7 +502,7 @@ span {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	background:black;
+	background:#222;
 	color:#aaa;
 	position:relative;
 }
@@ -533,11 +535,20 @@ span {
 	flex-direction: row;
 	justify-content: center;
 	align-content: stretch;
-	position: fixed;
+	position: absolute;
 	z-index:20000;
 	top:0;
 	right:0;
 	left:0;
+	p {
+		margin:0 auto;
+		text-align:center;
+		width:100%;
+		font-family: 'Quicksand', sans-serif;
+		font-size:40px;
+		text-transform: none;
+		color:white;
+	}
 	//border-top: 4px solid #2e96e0;
 	line-height:45px;
 	height:60px;
@@ -766,3 +777,175 @@ span {
 		font-size:30px;
 	}
 }
+
+
+//NEW CARDS
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn2 {
+  background-color: white;
+  border: 1px solid #ccc;
+  //border-radius: 1rem;
+  color: #555;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn2--block {
+  display: block;
+  width: 100%;
+}
+ 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+	list-style: none;
+	justify-content: space-around;
+  margin: 0;
+	padding: 0;
+}
+
+.cards p {
+	font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cards__item {
+  display: flex;
+	//padding: 1rem;
+	@media(min-width: 0rem) {
+    width: 100%;
+  }
+  @media(min-width: 55rem) {
+    width: 46%;
+  }
+  @media(min-width: 70rem) {
+    width: 24%
+  }
+}
+
+.card {
+	//background-color: white;
+	//background-color:#222;
+  border-radius: 0.25rem;
+  box-shadow: 0 15px 15px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+	overflow: hidden;
+	width:100%;
+	transition: all .1s ease-in-out;
+  &:hover {
+    .card__image {
+      filter: contrast(100%);
+		}
+		// transform: scale(1.01);
+		// -webkit-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.75);
+		// -moz-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.75);
+		// box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.75);
+		// z-index: 1000;
+		cursor:pointer;
+	}
+	.tag {
+		border: 0px;
+		font-family: Ubuntu, sans-serif;
+		padding: 3px;
+		background: rgba(204, 204, 204, 0.2);
+		//background: rgba(46, 150, 224, 0.3);
+		text-align:center;
+		color:white;
+		float:left;
+		font-size:12px;
+		margin:2px;
+
+		&.green {
+			background: rgba(38, 230, 30, 0.5);
+		}
+
+		&.blue {
+			//background: rgba(3, 93, 228, 0.2);
+			background: rgba(46, 150, 224, 0.8);
+		}
+
+		&.yellow {
+			background: rgba(238, 234, 3, 0.5);
+		}
+	}
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+	flex-direction: column;
+	padding: 1em 0;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  //filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+  &::before {
+    content: "";
+	  display: block;
+    padding-top: 56.25%; // 16:9 aspect ratio
+  }
+  @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; // 3:2 aspect ratio
+    }
+  }
+}
+
+.card__image--flowers {
+  background-image: url(https://unsplash.it/800/600?image=82);
+}
+
+.card__image--river {
+  background-image: url(https://unsplash.it/800/600?image=11);
+}
+
+.card__image--record {
+  background-image: url(https://unsplash.it/800/600?image=39);
+}
+
+.card__image--fence {
+  background-image: url(https://unsplash.it/800/600?image=59);
+}
+
+.card__title {
+	//color: #555;
+	color:#C9E0F1;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+	margin-bottom: 1.25rem;
+	color:#ccc;
+}
+
+.text__content {
+	opacity:.7;
+}
+
+

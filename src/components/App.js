@@ -39,7 +39,7 @@ export class App extends React.Component {
 		let loading = document.querySelector('.loading');
 		let content = document.querySelector('.content');
 		loading.classList.add('visible-vis');
-		this.refs.Masonry.onResize();
+		//this.refs.Masonry.onResize();
 		setTimeout(() => content.style.visibility = `visible`,1000);
 		setTimeout(() => {
 			loading.classList.remove('visible-vis');
