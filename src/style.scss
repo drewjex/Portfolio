@@ -10,6 +10,7 @@ body {
 	overflow-y:scroll;
 }  
 
+*,
 *::before,
 *::after { 
 	box-sizing: border-box;
@@ -325,6 +326,7 @@ body {
 	//animation: 1s ease-out 0s 1 slideInFromBottom;
 	width: 575px;
 	margin-top:427px;
+	position:relative;
 }
 
 .intro h1 {
