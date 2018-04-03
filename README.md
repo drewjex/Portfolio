@@ -1,2 +1,2 @@
 # Portfolio
-Repo for storing portfolio site
+Repo for storing portfolio site. Yay!
