@@ -13,12 +13,77 @@ let breakPoints = [500, 750, 1000];
 //let projects = [];
 let projects = [
 	{
+		title: "React Component Library",
+		description: "I led the development of a reusable component library built in React that can be pulled into web applications via a NPM package. Component library consisted of input text elements, drop downs, custom forms, radio/checkboxes, etc.",
+		image: require('./assets/arc.png'),
+		shortDescription: "In-house reusable component library to increase design-consistency across applications",
+		github: "",
+		project_url: "", //http://drewjex.x10host.com/booktracker/
+		tags: [
+			"React",
+			"JavaScript",
+			"Webpack",
+			"Yarn"
+		]
+	},
+	{
+		title: "Travel Discount App",
+		description: "I helped with the design and fully developed the front-end of the activities-reservation portion of the app for both desktop and mobile. Implmented best practices and most-recent features of React and Redux",
+		image: require('./assets/activities.png'),
+		shortDescription: "Travel app built on React/Ruby that has 300K+ users",
+		github: "",
+		project_url: "", //http://drewjex.x10host.com/booktracker/
+		tags: [
+			"React",
+			"Redux",
+			"Javascript",
+			"Ruby on Rails"
+		]
+	},
+	{
+		title: "Personal Music Site",
+		description: "I love to write music, and I am currently in the process of designing and developing a fully-functional single page app that allows users to hear and download my songs online.",
+		image: require('./assets/music.png'),
+		shortDescription: "Currently under-construction - React single-page app design mockup",
+		github: "https://github.com/drewjex/music",
+		project_url: "https://music.drewjex.com", //http://drewjex.x10host.com/booktracker/
+		tags: [
+			"React",
+			"Javascript",
+			"SCSS"
+		]
+	},
+	{
+		title: "Disneyland Tickets App",
+		description: "I helped design and personally developed a solution for selling discounted Disneyland tickets that is mobile friendly and easy to scan. Tickets are also printable and display consistently when printed on all major browsers, including IE11.",
+		image: require('./assets/disney.png'),
+		shortDescription: "Disneyland Ticket mobile web app for easy scanning at gate",
+		github: "",
+		project_url: "http://disneyland.drewjex.com", //http://drewjex.x10host.com/booktracker/
+		tags: [
+			"Javascript",
+			"SCSS"
+		]
+	},
+	{
+		title: "Thailand Travel Design Mockup",
+		description: "This is simply a front-end mockup of a potential landing page for a Travel site to Thailand. It showcases basic ability to design a simple, yet attractive web application using HTML and CSS.",
+		image: require('./assets/thailand.png'),
+		shortDescription: "Design Mockup for Thailand Travel Landing Page",
+		github: "",
+		project_url: "http://thailand.drewjex.com", //http://drewjex.x10host.com/booktracker/
+		tags: [
+			"HTML",
+			"SCSS"
+		]
+	},
+	{
 		title: "BookTracker",
 		description: "I worked directly with several employees at BYU's University Accessibility Center to personally design, develop, and deploy a robust MVC PHP/Javascript administration application. The app provides a student portal where students can submit books for conversion and an admin portal where employees and administrators can receive requests, track book statuses, send emails, manage employees, and much more. A variety of JQuery and Javascript libraries were used on the front-end, which make ajax requests to save data and update the MySQL database. To comply with student protections under FERPA law, only an incomplete demo site is available for viewing.",
 		image: require('./assets/booktracker.jpg'),
 		shortDescription: "Robust Administrative Web Application for BYU's UAC.",
 		github: "https://github.com/drewjex/BookTracker",
-		project_url: "http://drewjex.x10host.com/booktracker/",
+		project_url: "", //http://drewjex.x10host.com/booktracker/
 		tags: [
 			"JavaScript",
 			"JQuery",
@@ -35,7 +100,7 @@ let projects = [
 		image: require('./assets/music1.jpg'),
 		shortDescription: "Cutting-edge Spontaneous Music-Generation Software.",
 		github: "https://github.com/drewjex/MusicMaker-v2",
-		project_url: "http://drewjex.x10host.com/musicmaker/client/",
+		project_url: "", //http://drewjex.x10host.com/musicmaker/client/
 		tags: [
 			"JavaScript",
 			"PHP"
