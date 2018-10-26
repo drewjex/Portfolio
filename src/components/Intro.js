@@ -73,10 +73,10 @@ export class Intro extends React.Component {
 						<h1>Creator</h1> */}
 					</div>
 					<div className='row'>
-						<p>Software Architect specializing in rich UI design and functional user experiences.</p>
+						<p>Software Architect specializing in React/Redux and functional user experiences.</p>
 					</div>
 					<div className='row'>
-						<p>Linux is my favorite, but I'm flexible. Big fan of JavaScript (ES6+).</p>
+						<p>Mac is my favorite, but I'm flexible. Big fan of anything JavaScript (ES6+).</p>
 					</div>
 					<div className='row'>
 						<p>Love to learn, love to code. Also a huge tennis fanatic. :)</p>
