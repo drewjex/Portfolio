@@ -12,10 +12,12 @@ export class App extends React.Component {
 			showAboutMe: false,
 			selectedIndex: 0,
 			selectedTile: {},
-			loading:true
+			loading:true,
+			isLoadingPics: true
 		}
 		this.ToggleModal = this.ToggleModal.bind(this);
 		this.ToggleAboutMe = this.ToggleAboutMe.bind(this);
+		this.handleLoad = this.handleLoad.bind(this);
 	}
 
 	ToggleModal(id, event) {
@@ -36,15 +38,17 @@ export class App extends React.Component {
 	}
 
 	componentDidMount() {
-		let loading = document.querySelector('.loading');
-		let content = document.querySelector('.content');
-		loading.classList.add('visible-vis');
-		//this.refs.Masonry.onResize();
-		setTimeout(() => content.style.visibility = `visible`,1000);
+		window.addEventListener('load', this.handleLoad);
+	}
+
+	handleLoad(event) {
+		this.setState({isLoadingPics: false});
+		const loading = document.querySelector('.loading');
+		const content = document.querySelector('.content');
+		setTimeout(() => content.style.visibility = `visible`,500);
 		setTimeout(() => {
-			loading.classList.remove('visible-vis');
 			loading.classList.add('hidden-vis');	
-		},2000);
+		},1000);
 	}
 
   render(){
@@ -84,6 +88,7 @@ export class App extends React.Component {
 					<MyWork isAboutMe={this.state.showAboutMe}
 									showModal={this.state.showModal}/>
 					<div className="masonry-container">
+					{!this.state.isLoadingPics &&
 						<Masonry ref="Masonry" 
 										breakPoints={this.props.breakPoints}
 										ToggleModal={this.ToggleModal}
@@ -95,15 +100,16 @@ export class App extends React.Component {
 							{this.props.projects.map((project, id) => {
 								return (
 									<Tile key={id}
-												ID={id}
-												ToggleModal={this.ToggleModal}
-												title={project.title}
-												shortDescription={project.shortDescription}
-												tags={project.tags}
-												src={project.image} />
+										ID={id}
+										ToggleModal={this.ToggleModal}
+										title={project.title}
+										shortDescription={project.shortDescription}
+										tags={project.tags}
+										src={project.image} />
 								) 
 							})}
 						</Masonry>
+					}
 					</div>
 					<div className='footer-container'>
 						<div className="footer">
